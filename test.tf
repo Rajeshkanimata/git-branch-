@@ -6,8 +6,8 @@ provider "aws" {
 # main.tf
 resource "aws_instance" "web_server" {
   ami           = "ami-0e6329e222e662a52"  # Example Amazon Linux 2 AMI
-  instance_type = "t2.small"
-
+  instance_type = "t2.large"
+  
   tags = {
     Name = "MyWebServer"
   }
